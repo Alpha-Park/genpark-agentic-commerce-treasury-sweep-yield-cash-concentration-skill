@@ -1,0 +1,37 @@
+{
+  "name": "genpark-agentic-commerce-treasury-sweep-yield-cash-concentration-skill",
+  "version": "1.0.0",
+  "description": "Automated corporate multi-bank zero-balance account (ZBA) target balancing, interest arbitrage & sweep yield optimizer.",
+  "category": "agentic_commerce",
+  "author": "GenPark AI",
+  "website": "https://www.genpark.ai",
+  "linkedin": "https://www.linkedin.com/company/92955550",
+  "main": "skills.py",
+  "tools": [
+    {
+      "name": "optimize_treasury_cash_concentration_sweep",
+      "description": "Automated corporate multi-bank zero-balance account (ZBA) target balancing, interest arbitrage & sweep yield optimizer.",
+      "sample_input": {
+        "subsidiary_accounts": [
+          {
+            "account_id": "SUB-US-EAST",
+            "current_balance": 480000.0,
+            "target_balance": 50000.0
+          },
+          {
+            "account_id": "SUB-US-WEST",
+            "current_balance": 25000.0,
+            "target_balance": 50000.0
+          },
+          {
+            "account_id": "SUB-EU-OPS",
+            "current_balance": 720000.0,
+            "target_balance": 100000.0
+          }
+        ],
+        "master_target_buffer_usd": 1000000.0,
+        "overnight_yield_apy_pct": 4.85
+      }
+    }
+  ]
+}
